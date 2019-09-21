@@ -28,7 +28,7 @@ socket.on('Users_Online',arrUserInfo =>{
 
 
 function openStream(){
-    const config = {audio: false, video: true};
+    const config = {audio: true, video: true};
     return navigator.mediaDevices.getUserMedia(config); 
 }
 //openStream().then(stream => playStream('localStream',stream));
