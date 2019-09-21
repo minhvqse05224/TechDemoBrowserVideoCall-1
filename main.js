@@ -39,7 +39,7 @@ function playStream(idVideoTag, stream){
     video.play();
 }  
 
-const  peer = new Peer({secure:true,port:443}); 
+const  peer = new Peer(); 
 peer.on('open', id => {
     $('#my-peer').append(id)
     $('#btnSignUp').click(() => {
